@@ -1,4 +1,13 @@
+#seccion-introduccion{
+    padding-top: 100px;
+}
 
+#seccion-proyectos{
+    padding-top:100px
+}
+#seccion-contactos{
+    padding-top: 100px;
+}
 
 section{
     display: flex;
@@ -11,11 +20,23 @@ section{
     
  }
 
+ #seccion-introduccion h1{
+    font-style: italic;
+    color: #49444e
+ }
+
+ #seccion-introduccion p{
+    padding-left: 5px;
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
 
 @media  (max-width: 1800px){
+ 
+
     .navbar-light{
         position:fixed;
-        background: linear-gradient(0deg,#FFFFDD, #6b3888 6%);
+        background: linear-gradient(0deg,#ffffdddc, #6b3888f0 6%);
         padding-left: 5px;
         padding-top: 5px;
         width: 100%;
@@ -44,7 +65,8 @@ section{
     }
     
     .nav-link{
-        color: #FFFFFF;
+        color: #ffffffe2;
+        
     }
 
     .nav-link:hover{
@@ -77,10 +99,9 @@ section{
     }
     
     .navbar-nav{
-        
         align-items: center;
         justify-items: center;
-        background-color: #6b3888;
+        background-color: #6b388800;
         
     }
     
@@ -95,7 +116,6 @@ section{
     }
     
     
-    
     .card-image-container img{
         display:block;
         padding: 40px;
@@ -108,10 +128,9 @@ section{
     }
 
     .contact{
-        
         background-color: #4942ce;
         width: 100%;
-        overflow-x: scroll;
+        
         height: 150px;
         list-style: none;
         justify-content: center;
@@ -130,24 +149,26 @@ section{
         color: #FFFFFF;
     }
 
-    
-
-
-
-
 }
 
 @media (max-width:767px){
 
+    #seccion-introduccion p{
+        padding: 0 10px 0 10px;
+        min-width: 300px;
+    }
+
     .contact{
+      overflow-x: scroll;
       justify-content: left;
       
     }
 
     .contact div{
         border: 1px solid #b6c4e4;
-        height: 120px;
-        width: 90px
+        height: 110px;
+        width: 90px;
+        border-radius: 10%;
     }
 
     .background-image{
