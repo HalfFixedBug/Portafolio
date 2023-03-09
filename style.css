@@ -2,6 +2,10 @@
     padding-top: 100px;
 }
 
+#seccion-introduccion h1{
+    text-align: center;
+}
+
 #seccion-proyectos{
     padding-top:100px
 }
@@ -31,9 +35,56 @@ section{
     text-align: justify;
 }
 
+
+#seccion-proyectos section h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card-image-container h4{
+    
+    position: absolute;
+    top:30%;
+    left: 40%;
+    color: #FFFFFF;
+    opacity:0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media  (min-width: 768px) and (max-width:1800px){
+    
+.card-image-container:hover img{
+    filter: brightness(50%);
+    transition: .5s filter;
+    
+}
+
+.card-image-container:hover h4{
+    opacity: 1;
+    transition: .5s opacity;
+    
+}
+
+.card-image-container a{
+    position:absolute;
+    top:45%;
+    left:47%;
+    transform: scale(2.2,2.2);
+    color: #FFFFFF;
+    opacity: 0;
+}
+
+.card-image-container:hover a{
+    opacity: 1;
+    transition: .5s opacity;
+}
+
+
+}
+
+
 @media  (max-width: 1800px){
  
-
     .navbar-light{
         position:fixed;
         background: linear-gradient(0deg,#ffffdddc, #6b3888f0 6%);
@@ -224,7 +275,30 @@ section{
         transition: .5s transform;
     }
 
-    
+    .card-image-container.active img{
+        filter: brightness(50%);
+        transition: .5s filter;
+    }
+
+    .card-image-container.active h4{
+        opacity: 1;
+        transition: .5s opacity;
+    }
+
+    .card-image-container a{
+        display: none;
+        position: absolute;
+        top:51%;
+        left:78%;
+        color: #FFFFFF;
+        transform: scale(1.5,1.5);
+        opacity: 0;
+    }
+
+    .card-image-container.active a{
+        display: inline;
+        opacity: 1;
+        transition: .5s opacity;
+    }
+  
 }
-
-
